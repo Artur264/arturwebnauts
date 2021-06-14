@@ -1,5 +1,27 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/gilroy-bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Girloy';
+    src: url(../fonts/gilroy-semibold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Girloy';
+    src: url(../fonts/gilroy-regular.ttf);
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Girloy';
+}
+
+/*HEADER*/
+
 .header .header-wrapper-top {
-    background-color: #20242D;
+    background-color: #20242d;
 }
 .header .header-address {
     font-size: 12px;
@@ -8,53 +30,125 @@
     line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFFFF;
+    color: #ffffff;
 }
-.header .header-list a {  
+.header .header-list a {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
 }
 .header .header-wrapper-bottom {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 .header .navigation a {
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 17px;
-letter-spacing: 0em;
-text-align: left;
-color: #20242D;
-text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #20242d;
+    text-decoration: none;
 }
-.header .navigation .active {
-    color: #FF7129;
+.header .navigation a:hover {
+    color: #ff7129;
+}
+/* MAIN*/
+.start-screen .main-start-screen-text {
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 145px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 1px;
+    color: #ffffff;
 }
 .start-screen .main-home-title {
-font-size: 92px;
-font-style: normal;
-font-weight: 700;
-line-height: 111px;
-letter-spacing: 0em;
-text-align: center;
-color: #FFFFFF;
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
 }
 .start-screen .main-home-slogan {
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: center;
-color: #FFFFFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
 }
 .start-screen .button-icon-start-screen {
-    background: #FF7129;
-    box-shadow: 0px 4px 28px 0px #FF71294A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #ff7129;
+    box-shadow: 0px 4px 28px 0px #ff71294a;
+}
+.main-info .main-title-info {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #20242d;
+}
+.main-info .main-text-info {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #20242d;
+}
+/*FOOTER*/
+
+.footer-wrapper {
+    background: #20242d;
+}
+.footer-wrapper .navigation a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-wrapper .navigation :hover {
+    color: #ff7129;
+}
+.footer-wrapper .button-dark {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    background: #20242d;
+}
+.footer-wrapper .footer-wrapper-bot a {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #7b7e85;
 }

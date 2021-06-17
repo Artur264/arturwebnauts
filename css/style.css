@@ -16,13 +16,46 @@
 
 body {
     font-family: 'Girloy';
+    margin: 0;
+}
+
+button{
+    padding: 0;
+    border: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1600px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*HEADER*/
 
 .header .header-wrapper-top {
     background-color: #20242d;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+.header .header-wrapper-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header .header-address {
     font-size: 12px;
     font-style: normal;
@@ -32,6 +65,21 @@ body {
     text-align: left;
     color: #ffffff;
 }
+
+.header .header-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header .header-list li {
+    margin-right: 57px;
+}
+
+.header .header-list li:last-child {
+    margin-right: 0;
+}
+
 .header .header-list a {
     font-size: 12px;
     font-style: normal;
@@ -42,9 +90,33 @@ body {
     color: #ffffff;
     text-decoration: none;
 }
+
 .header .header-wrapper-bottom {
     background-color: #ffffff;
+    padding-top: 12px;
+    padding-bottom: 11px;
 }
+
+.header .header-wrapper-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navigation li {
+    margin-right: 56px;
+}
+
+.header .navigation li:last-child {
+    margin-right: 0;
+}
+
 .header .navigation a {
     font-size: 14px;
     font-style: normal;
@@ -59,6 +131,17 @@ body {
     color: #ff7129;
 }
 /* MAIN*/
+
+.start-screen {
+    background: #777;
+    padding-top: 270px;
+    padding-bottom: 138px;
+    background-image: url(../img/main-start-screen-bg.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat ;
+}
+
 .start-screen .main-start-screen-text {
     font-size: 120px;
     font-style: normal;
@@ -68,6 +151,7 @@ body {
     text-align: left;
     border: 1px;
     color: #ffffff;
+    margin-top: 0;
 }
 .start-screen .main-home-title {
     font-size: 92px;
@@ -77,6 +161,7 @@ body {
     letter-spacing: 0em;
     text-align: center;
     color: #ffffff;
+    margin-bottom: 16px;
 }
 .start-screen .main-home-slogan {
     font-size: 16px;
@@ -86,6 +171,9 @@ body {
     letter-spacing: 0em;
     text-align: center;
     color: #ffffff;
+    max-width: 508px;
+    margin-left:  auto;
+    margin-right: auto;
 }
 .start-screen .button-icon-start-screen {
     font-size: 14px;
@@ -96,7 +184,56 @@ body {
     text-align: center;
     background: #ff7129;
     box-shadow: 0px 4px 28px 0px #ff71294a;
+    width: 188px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    margin-bottom: 106px;
 }
+
+.start-screen .button-scroll {
+    display: block;
+    background: rgba(123, 126, 133, 0.4);
+    width: 46px;
+    height: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+/*MAIN*/
+
+.main-info {
+    padding-top: 132px;
+    padding-bottom: 115px;
+    background-image: url(../img/main-info-bg.png);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-info .container {
+    display: flex;
+}
+
+.main-info img {
+    margin-right: 65px;
+}
+
+.main-info .main-text {
+    width: 535px; 
+    padding-top: 69px;
+}
+
+.main-info .main-title-info {
+    margin-top: 0;
+    margin-bottom: 64px;
+}
+
 .main-info .main-title-info {
     font-size: 48px;
     font-style: normal;
@@ -106,6 +243,7 @@ body {
     text-align: left;
     color: #20242d;
 }
+
 .main-info .main-text-info {
     font-size: 16px;
     font-style: normal;
@@ -115,11 +253,35 @@ body {
     text-align: left;
     color: #20242d;
 }
+
 /*FOOTER*/
 
 .footer-wrapper {
     background: #20242d;
 }
+
+.footer-wrapper .footer-wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 58px;
+    padding-bottom: 52px;
+}
+
+.footer-wrapper .footer-wrapper-top ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-wrapper .footer-wrapper-top li {
+    margin-right: 56px;
+}
+
+.footer-wrapper .footer-wrapper-top li :last-child{
+    margin-right: 0px;
+}
+
 .footer-wrapper .navigation a {
     font-size: 14px;
     font-style: normal;
@@ -143,7 +305,8 @@ body {
     color: #ffffff;
     background: #20242d;
 }
-.footer-wrapper .footer-wrapper-bot a {
+
+ .footer-wrapper .footer-wrapper-bot a {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -152,3 +315,26 @@ body {
     text-align: center;
     color: #7b7e85;
 }
+
+.footer-wrapper .footer-wrapper-bot {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid rgba(123, 126, 133, 1);
+    opacity: 0.3;
+}
+
+.footer-wrapper .button-dark {
+border: 1px solid #FF7129;
+box-sizing: border-box;
+width: 187px;
+height: 49px;
+}
+
+
+.footer-wrapper .button-dark li:last-child {
+    margin-right: 0px;
+}
+
+

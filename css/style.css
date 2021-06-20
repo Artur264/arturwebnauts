@@ -82,7 +82,8 @@ a {
     line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
-    color: #ffffff;
+    color: #FFFFFF;
+    ;
 }
 
 .header .header-list {
@@ -212,8 +213,6 @@ a {
     border-radius: 50%;
 }
 
-/*MAIN*/
-
 .main-info {
     padding-top: 132px;
     padding-bottom: 115px;
@@ -226,6 +225,7 @@ a {
 .main-info .container {
     display: flex;
     justify-content: center;
+
 }
     
 
@@ -344,6 +344,64 @@ height: 49px;
 
 .footer-wrapper .btn-dark li:last-child {
     margin-right: 0px;
+}
+
+
+/* ABOUT US main*/
+
+.about-us {
+    padding-top: 200px;
+    padding-bottom: 103px;
+    background-image: url(../img/main-about-us-start-screen-bg.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.about-us .main-title-about-us {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 150px;
+}
+
+.about-us-content {
+    background-image: url(../img/main-info-about-us-bg.png);
+    background-repeat: no-repeat;
+    background-size: 535px 606px;
+    background-position: 0px 121px;
+}
+
+.about-us-content .container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-us-content-right {
+    margin-top: 80px;
+    max-width: 534px;
+}
+
+.about-us-content-left p,
+.about-us-content-right p {
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #20242D;
+}
+
+.about-us-content-left {
+    margin: 80px 66px 184px 150px;
+}
+.about-us-content-left p:first-child {
+    margin-bottom: 24px;
 }
 
 

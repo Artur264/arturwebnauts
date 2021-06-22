@@ -417,17 +417,12 @@ color: #20242D;
 
 /* FORM FORM FORM */
 .popup-header {
+    padding-top: 72px;
+    padding-bottom: 72px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #FF7129;
-}
-
-
-
-.header-popup-price {
-    padding-top: 72px;
-    padding-bottom: 72px;
 }
 
 .header-popup-price p:first-child {
@@ -438,6 +433,7 @@ color: #20242D;
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
+    margin-bottom: 4px;
 }
 
 .header-popup-price p:last-child {
@@ -448,17 +444,17 @@ color: #20242D;
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
-    margin-top: 4px;
 }
 
 .btn-header-popup {
     color: #FF7129;
     background: #FFFFFF;
-    padding: 16px 62px;
-    margin: 61px 58px;
+    padding: 16px 55px;
+    margin-top: 91px;
+    margin-bottom: 85px;
 }
 
-.popup-main-title {
+.popup-main-form {
     padding-top: 72px;
     padding-bottom: 72px;
     background: #FFFFFF;

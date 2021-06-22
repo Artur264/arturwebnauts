@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <header>
-        <section class="header-info-data-form">
-            <p>
-                Przybliżony koszt
-            </p>
-            <h1>
-                40 000 zł
-            </h1>
-            <button class="button-header-data-form">
-                Przeliczyć
-                <!-- <img src="img/button-header-data-form.jpg" width="187" height="49" alt="data form"> -->
-            </button>
-        </section>
-    </header>
-    <main>
-        <section class="main-info-data-form">
-            <h3>
-                Jakieś pytania?
-            </h3>
-            <p>
-                Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania
-            </p>
-            <form action="">
-                <p>
-                    Twoje imię
-                </p>
-                <br>
-                <input type="text" name="Wprowadź swoje imię" id="" placeholder="Wprowadź swoje imię">
-            
-                <p>
-                    E-mail
-                </p>
-                <br>
-                <input type="text" name="Wprowadź mail" id="" placeholder="Wprowadź mail">
 
-                <p>
-                    Telefon
-                </p>
-                <br>
-                <input type="tel" name="Telefon" id="" placeholder="Wprowadź telefon">
-            </form>
-        </section>
-        <div>
-            <button class="button-main-data-form"> Wysłać prośbę
-                <!-- <img src="img/button-icon-start-screen.jpg" width="187" height="49" alt="data form"> -->
-            </button>
+<body>
+    <div class="popup">
+        <div class="container-popup">
+            <div class="popup-header popup-padding58">
+                <div class="header-popup-price">
+                    <p>
+                        Przybliżony koszt:
+                    </p>
+                    <p>
+                        40 000 zł
+                    </p>
+                </div>
+                <button class="btn btn-header-popup">
+                    Przeliczyć
+                </button>
+            </div>
+            <div class="popup-main-form popup-padding58">
+                <div class="popup-main-title">
+                    <h3>
+                        Jakieś pytania?
+                    </h3>
+                    <p>
+                        Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania
+                    </p>
+                </div>
+                <form method="POST" action="#">
+                    <label for="name">
+                        Twoje imię
+                    </label>
+                    <input type="text" name="name" id="name" placeholder="Wprowadź swoje imię">
+                    <label for="E-mail">
+                        E-mail
+                    </label>
+                    <input type="E-mail" name="E-mail" id="E-mail" placeholder="Wprowadź mail">
+                    <label for="Telefon">
+                        Telefon
+                    </label>
+                    <input type="Telefon" name="Telefon" id="Telefon" placeholder="Wprowadź telefon">
+                    <button class="btn btn-popup-main-form">
+                        Wysłać prośbę
+                    </button>
+                </form>
+            </div>
         </div>
-    </main>
+    </div>
+
 </body>
+
 </html>

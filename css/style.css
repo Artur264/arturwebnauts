@@ -34,6 +34,18 @@ a {
     text-decoration: none;
 }
 
+.decor-word {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 145px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: transparent;
+    text-transform: uppercase;
+}
+
 .btn {
     background: #ff7129;
     font-size: 14px;
@@ -53,7 +65,8 @@ a {
 }
 
 .container {
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     padding-left: 50px;
     padding-right: 50px;
     margin-left: auto;
@@ -63,7 +76,7 @@ a {
 
 .container-popup {
     max-width: 800px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 .popup-padding58 {
@@ -103,7 +116,15 @@ a {
 }
 
 .header .header-list li {
+    position: relative;
     margin-right: 57px;
+    padding-left: 21px;
+}
+
+.header .header-list svg {
+    position: absolute;
+    top: 5px;
+    left: 0;
 }
 
 .header .header-list li:last-child {
@@ -160,9 +181,36 @@ a {
 .header .navigation a:hover {
     color: #ff7129;
 }
+
+.header .navigation .active-li::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 1px;
+    background-color: #FF7129;
+    top: 7px;
+    left: -15px;
+}
+
+.header .navigation .active-li {
+    position: relative;
+}
+
+.header .navigation .active-li::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 1px;
+    background-color: #FF7129;
+    top: 7px;
+    right: -15px;
+}
 /* MAIN*/
 
 .start-screen {
+    position: relative;
     background: #777;
     padding-top: 270px;
     padding-bottom: 138px;
@@ -172,17 +220,20 @@ a {
     background-repeat: no-repeat ;
 }
 
-.start-screen .main-start-screen-text {
-    font-size: 120px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 145px;
-    letter-spacing: 0em;
-    text-align: left;
-    border: 1px;
-    color: #ffffff;
-    margin-top: 0;
+.start-screen .decor-word-1 {
+    position: absolute;
+    top: 163px;
+    left: 50px;
 }
+
+.start-screen .decor-word-2 {
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: 282px;
+    right: 50px;
+}
+
 .start-screen .main-home-title {
     font-size: 92px;
     font-style: normal;
@@ -244,13 +295,42 @@ a {
 }
 
 .main-info .main-text {
+    position: relative;
     width: 535px; 
     padding-top: 69px;
 }
 
+.main-info .main-text .decor-word-main {
+    position: absolute;
+    -webkit-text-stroke: 1px  rgba(32, 36, 45, 0.1);
+    top: 2px;
+    left: -28px;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
 .main-info .main-title-info {
+    position: relative;
     margin-top: 0;
     margin-bottom: 64px;
+    padding-left: 16px;
+
+}
+
+.main-info .main-title-info::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 42px;
+    background-color: #FF7129;
+    top: 0;
+    left: 0;
 }
 
 .main-info .main-title-info {
@@ -416,6 +496,26 @@ color: #20242D;
 
 
 /* FORM FORM FORM */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* margin-left: -400px;
+    margin-top: -523px; */
+    transform: translate(-50%, -50%);
+}
+
+.popup .btn-popup-close {
+    position: absolute;
+    color: #FFFFFF;
+    background-color: transparent;
+    top: 22px;
+    right: 22px;
+    
+}
+
 .popup-header {
     padding-top: 72px;
     padding-bottom: 72px;

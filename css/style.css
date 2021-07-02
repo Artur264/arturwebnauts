@@ -538,13 +538,31 @@ color: #20242D;
 /* FORM FORM FORM */
 
 .popup {
-    display: block;
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     /* margin-left: -400px;
     margin-top: -523px; */
-    transform: translate(-50%, -25%);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadeIn {
+    0% {
+        transform:translate(-50%, -2000%);
+    }
+    50% {
+        transform: translate(-50%, 0%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.popup-show {
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
 .btn-popup-close {
@@ -553,7 +571,6 @@ color: #20242D;
     background-color: transparent;
     top: 22px;
     right: 22px;
-    
 }
 
 .popup-header {

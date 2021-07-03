@@ -67,6 +67,11 @@ a {
     padding-right: 40px;
     padding-bottom: 16px;
     padding-left: 40px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
 
 .container {
@@ -87,6 +92,10 @@ a {
 .popup-padding58 {
     padding-left: 58px;
     padding-right: 58px;
+}
+
+a:focus {
+    opacity: 0.7 ;
 }
 
 /*HEADER*/
@@ -277,6 +286,11 @@ a {
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.start-screen .button-scroll:hover{
+    opacity: 0.7;
 }
 
 .main-info {
@@ -468,7 +482,7 @@ height: 49px;
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
-    margin-left: 200px;
+    margin-left: 150px;
     padding-left: 16px;
 }
 
@@ -571,12 +585,16 @@ color: #20242D;
     background-color: transparent;
     top: 22px;
     right: 22px;
+    cursor: pointer;
+}
+.btn-popup-close:hover {
+    opacity: 0.7;
 }
 
 .popup-header {
     position: relative;
-    /* padding-top: 72px;
-    padding-bottom: 72px; */
+    padding-top: 72px;
+    padding-bottom: 72px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -608,9 +626,8 @@ color: #20242D;
     color: #FF7129;
     background: #FFFFFF;
     padding: 16px 55px;
-    margin-top: 91px;
-    margin-bottom: 85px;
     margin-left: 288px;
+    margin: 0;
 }
 
 .popup-main-form {
